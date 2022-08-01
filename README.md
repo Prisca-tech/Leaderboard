@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> This project is to build a list structure for the to-do app.
+> This project is to build the structure/ wireframe for the leaderboard app.
 
 ## Built With
 
