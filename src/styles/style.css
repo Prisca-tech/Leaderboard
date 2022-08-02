@@ -43,6 +43,7 @@ button {
   border: none;
   border-radius: 10px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .table {
@@ -60,6 +61,7 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .list {

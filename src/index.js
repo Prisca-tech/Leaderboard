@@ -15,6 +15,9 @@ submitButton.addEventListener('click', (e) => {
   e.preventDefault();
   postScore({ user: userInput?.value, score: scoreInput?.value });
   form.reset();
+  setTimeout(() => {
+    window.location.reload();
+  }, 2000);
 });
 
 const populateData = () => {
@@ -32,4 +35,5 @@ const populateData = () => {
 refreshButton.addEventListener('click', () => {
   getScore();
   populateData();
+  return scores?.length > 0 && refreshButton.classList.add('hide');
 });
