@@ -11,30 +11,28 @@
 <body>
   <main>
     <section class="container">
+      <p class="notification hide">Form submitted</p>
 
       <form>
         <h1>Enter your Score</h1>
-        <input type="text" placeholder="Enter your score" required>
-        <button class='clearButton' type="button">submit</button>
+        <input type="text" placeholder="Enter your name" class='nameInput' required>
+        <input type="text" placeholder="Enter your score" class='scoreInput' required>
+        <button class='submitButton' type="button">submit</button>
       </form>
-
       <div class="list" id="list">
         <div class="heading">
           <h1>LeaderBoard</h1>
         </div>
-        <table clasS="table">
+        <table class="table">
           <tbody>
             <tr>
               <th>User</th>
               <td>Score</td>
             </tr>
-            <tr>
-              <th>Precious</th>
-              <td>1000</td>
-            </tr>
           </tbody>
         </table>
       </div>
+      <button class='refreshButton' type="submit">refresh</button>
     </section>
   </main>
 </body>

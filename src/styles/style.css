@@ -27,6 +27,16 @@ form {
   box-shadow: 5px 5px #fff, -5px 5px #fff;
 }
 
+.hide {
+  display: none;
+}
+
+.notification {
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+}
+
 button {
   margin-top: 20px;
   padding: 10px 50px;
