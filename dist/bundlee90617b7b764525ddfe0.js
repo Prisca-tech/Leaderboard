@@ -23,7 +23,10 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+/* eslint-disable */
 var scores = [];
+/* eslint-enable */
+
 var notice = document.querySelector('.notification');
 var baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 var postGame = /*#__PURE__*/function () {
@@ -36,8 +39,8 @@ var postGame = /*#__PURE__*/function () {
             return fetch("".concat(baseUrl, "/games/"), {
               method: 'POST',
               headers: {
-                "Content-Type": 'application/json',
-                'Accept': 'application/json'
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
               },
               body: JSON.stringify(value)
             }).then(function (response) {
@@ -70,18 +73,18 @@ var postScore = /*#__PURE__*/function () {
             return fetch("".concat(baseUrl, "/games/w10xKEqRwCtrOcgLYzZu/scores/"), {
               method: 'POST',
               headers: {
-                "Content-Type": 'application/json',
-                'Accept': 'application/json'
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
               },
               body: JSON.stringify(value)
             }).then(function (response) {
               return response.json();
             }).then(function (data) {
-              (data === null || data === void 0 ? void 0 : data.result) === 'Leaderboard score created correctly.' && notice.classList.remove('hide');
+              var sorted = (data === null || data === void 0 ? void 0 : data.result) === 'Leaderboard score created correctly.' && notice.classList.remove('hide');
               setTimeout(function () {
                 notice.classList.add('hide');
               }, 3000);
-              return data;
+              return sorted;
             })["catch"](function (error) {
               throw error;
             });
@@ -107,8 +110,8 @@ var getScore = /*#__PURE__*/function () {
             _context3.next = 2;
             return fetch("".concat(baseUrl, "/games/w10xKEqRwCtrOcgLYzZu/scores/"), {
               headers: {
-                "Content-Type": 'application/json',
-                'Accept': 'application/json'
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
               }
             }).then(function (response) {
               return response.json();
@@ -746,7 +749,7 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.css */ "./src/styles/style.css");
-/* harmony import */ var _modules_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/utils */ "./modules/utils.js");
+/* harmony import */ var _modules_utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/utils.js */ "./modules/utils.js");
 
 
 var userInput = document.querySelector('.nameInput');
@@ -754,11 +757,10 @@ var scoreInput = document.querySelector('.scoreInput');
 var form = document.querySelector('form');
 var submitButton = document.querySelector('.submitButton');
 var refreshButton = document.querySelector('.refreshButton');
-var apiData = document.querySelector('.table'); // postGame({name: 'Call of Duty'})
-
+var apiData = document.querySelector('.table');
 submitButton.addEventListener('click', function (e) {
   e.preventDefault();
-  (0,_modules_utils__WEBPACK_IMPORTED_MODULE_1__.postScore)({
+  (0,_modules_utils_js__WEBPACK_IMPORTED_MODULE_1__.postScore)({
     user: userInput === null || userInput === void 0 ? void 0 : userInput.value,
     score: scoreInput === null || scoreInput === void 0 ? void 0 : scoreInput.value
   });
@@ -766,18 +768,18 @@ submitButton.addEventListener('click', function (e) {
 });
 
 var populateData = function populateData() {
-  for (var i = 0; i < _modules_utils__WEBPACK_IMPORTED_MODULE_1__.scores.length; i++) {
-    var item = _modules_utils__WEBPACK_IMPORTED_MODULE_1__.scores[i];
+  for (var i = 0; i < (_modules_utils_js__WEBPACK_IMPORTED_MODULE_1__.scores === null || _modules_utils_js__WEBPACK_IMPORTED_MODULE_1__.scores === void 0 ? void 0 : _modules_utils_js__WEBPACK_IMPORTED_MODULE_1__.scores.length); i += 1) {
+    var item = _modules_utils_js__WEBPACK_IMPORTED_MODULE_1__.scores[i];
     apiData.innerHTML += "\n        <tr>\n        <th>".concat(item === null || item === void 0 ? void 0 : item.user, "</th>\n        <td>").concat(item === null || item === void 0 ? void 0 : item.score, "</td>\n        </tr> \n        ");
   }
 };
 
 refreshButton.addEventListener('click', function () {
-  (0,_modules_utils__WEBPACK_IMPORTED_MODULE_1__.getScore)();
-  (_modules_utils__WEBPACK_IMPORTED_MODULE_1__.scores === null || _modules_utils__WEBPACK_IMPORTED_MODULE_1__.scores === void 0 ? void 0 : _modules_utils__WEBPACK_IMPORTED_MODULE_1__.scores.length) && populateData();
+  (0,_modules_utils_js__WEBPACK_IMPORTED_MODULE_1__.getScore)();
+  populateData();
 });
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle9d8e9a1f76ea14db189d.js.map
+//# sourceMappingURL=bundlee90617b7b764525ddfe0.js.map
