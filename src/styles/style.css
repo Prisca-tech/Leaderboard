@@ -6,6 +6,7 @@
 }
 
 body {
+  background: url(../assets/alien.webp);
   background-color: rgb(116, 114, 112);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -48,6 +49,7 @@ button {
 
 .table {
   margin-top: 20px;
+  font-weight: 900;
 }
 
 input {
@@ -79,6 +81,7 @@ h1 {
 input[type=text] {
   padding: 10px;
   width: 90%;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 767px) {

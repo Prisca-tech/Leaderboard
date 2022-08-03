@@ -154,12 +154,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../assets/alien.webp */ "./src/assets/alien.webp"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n}\n\nbody {\n  background-color: rgb(116, 114, 112);\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n}\n\n.heading {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\nform {\n  width: 500px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 30px 0;\n  box-shadow: 5px 5px #fff, -5px 5px #fff;\n}\n\n.hide {\n  display: none;\n}\n\n.notification {\n  font-weight: 700;\n  color: #fff;\n  font-size: 20px;\n}\n\nbutton {\n  margin-top: 20px;\n  padding: 10px 50px;\n  border: none;\n  border-radius: 10px;\n  font-size: 18px;\n  cursor: pointer;\n}\n\n.table {\n  margin-top: 20px;\n}\n\ninput {\n  margin-top: 20px;\n}\n\n.container {\n  margin: 20px;\n  border: 2px solid white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  padding-bottom: 30px;\n}\n\n.list {\n  display: flex;\n  flex-direction: column;\n  margin-top: 50px;\n  width: 50%;\n  font-size: 20px;\n}\n\nh1 {\n  font-size: 40px;\n}\n\ninput[type=text] {\n  padding: 10px;\n  width: 90%;\n}\n\n@media screen and (max-width: 767px) {\n  form,\n.list,\n.list-item {\n    width: 100%;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,qBAAA;AACF;;AAEA;EACE,oCAAA;EACA,4DAAA;AACF;;AAEA;EACE,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;EACA,uCAAA;AACF;;AAEA;EACE,aAAA;AACF;;AAEA;EACE,gBAAA;EACA,WAAA;EACA,eAAA;AACF;;AAEA;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,mBAAA;EACA,eAAA;EACA,eAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;EACA,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,sBAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,UAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;AACF;;AAEA;EACE,aAAA;EACA,UAAA;AACF;;AAEA;EACE;;;IAGE,WAAA;EACF;AACF","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n  padding: 0;\r\n  margin: 0;\r\n  list-style-type: none;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(116, 114, 112);\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n\r\n.heading {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\r\n}\r\n\r\nform {\r\n  width: 500px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 30px 0;\r\n  box-shadow: 5px 5px #fff, -5px 5px #fff;\r\n}\r\n\r\n.hide {\r\n  display: none;\r\n}\r\n\r\n.notification {\r\n  font-weight: 700;\r\n  color: #fff;\r\n  font-size: 20px;\r\n}\r\n\r\nbutton {\r\n  margin-top: 20px;\r\n  padding: 10px 50px;\r\n  border: none;\r\n  border-radius: 10px;\r\n  font-size: 18px;\r\n  cursor: pointer;\r\n}\r\n\r\n.table {\r\n  margin-top: 20px;\r\n}\r\n\r\ninput {\r\n  margin-top: 20px;\r\n}\r\n\r\n.container {\r\n  margin: 20px;\r\n  border: 2px solid white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  flex-direction: column;\r\n  padding-bottom: 30px;\r\n}\r\n\r\n.list {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-top: 50px;\r\n  width: 50%;\r\n  font-size: 20px;\r\n}\r\n\r\nh1 {\r\n  font-size: 40px;\r\n}\r\n\r\ninput[type=text] {\r\n  padding: 10px;\r\n  width: 90%;\r\n}\r\n\r\n@media screen and (max-width: 767px) {\r\n  form,\r\n  .list,\r\n  .list-item {\r\n    width: 100%;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n}\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-color: rgb(116, 114, 112);\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n}\n\n.heading {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n\nform {\n  width: 500px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 30px 0;\n  box-shadow: 5px 5px #fff, -5px 5px #fff;\n}\n\n.hide {\n  display: none;\n}\n\n.notification {\n  font-weight: 700;\n  color: #fff;\n  font-size: 20px;\n}\n\nbutton {\n  margin-top: 20px;\n  padding: 10px 50px;\n  border: none;\n  border-radius: 10px;\n  font-size: 18px;\n  cursor: pointer;\n}\n\n.table {\n  margin-top: 20px;\n  font-weight: 900;\n}\n\ninput {\n  margin-top: 20px;\n}\n\n.container {\n  margin: 20px;\n  border: 2px solid white;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  padding-bottom: 30px;\n}\n\n.list {\n  display: flex;\n  flex-direction: column;\n  margin-top: 50px;\n  width: 50%;\n  font-size: 20px;\n}\n\nh1 {\n  font-size: 40px;\n}\n\ninput[type=text] {\n  padding: 10px;\n  width: 90%;\n  font-weight: 900;\n}\n\n@media screen and (max-width: 767px) {\n  form,\n.list,\n.list-item {\n    width: 100%;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;EACA,qBAAA;AACF;;AAEA;EACE,mDAAA;EACA,oCAAA;EACA,4DAAA;AACF;;AAEA;EACE,WAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,eAAA;EACA,uCAAA;AACF;;AAEA;EACE,aAAA;AACF;;AAEA;EACE,gBAAA;EACA,WAAA;EACA,eAAA;AACF;;AAEA;EACE,gBAAA;EACA,kBAAA;EACA,YAAA;EACA,mBAAA;EACA,eAAA;EACA,eAAA;AACF;;AAEA;EACE,gBAAA;EACA,gBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,YAAA;EACA,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,sBAAA;EACA,oBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,gBAAA;EACA,UAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;AACF;;AAEA;EACE,aAAA;EACA,UAAA;EACA,gBAAA;AACF;;AAEA;EACE;;;IAGE,WAAA;EACF;AACF","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n  padding: 0;\r\n  margin: 0;\r\n  list-style-type: none;\r\n}\r\n\r\nbody {\r\n  background: url(../assets/alien.webp);\r\n  background-color: rgb(116, 114, 112);\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n\r\n.heading {\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\r\n}\r\n\r\nform {\r\n  width: 500px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 30px 0;\r\n  box-shadow: 5px 5px #fff, -5px 5px #fff;\r\n}\r\n\r\n.hide {\r\n  display: none;\r\n}\r\n\r\n.notification {\r\n  font-weight: 700;\r\n  color: #fff;\r\n  font-size: 20px;\r\n}\r\n\r\nbutton {\r\n  margin-top: 20px;\r\n  padding: 10px 50px;\r\n  border: none;\r\n  border-radius: 10px;\r\n  font-size: 18px;\r\n  cursor: pointer;\r\n}\r\n\r\n.table {\r\n  margin-top: 20px;\r\n  font-weight: 900;\r\n}\r\n\r\ninput {\r\n  margin-top: 20px;\r\n}\r\n\r\n.container {\r\n  margin: 20px;\r\n  border: 2px solid white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  flex-direction: column;\r\n  padding-bottom: 30px;\r\n}\r\n\r\n.list {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-top: 50px;\r\n  width: 50%;\r\n  font-size: 20px;\r\n}\r\n\r\nh1 {\r\n  font-size: 40px;\r\n}\r\n\r\ninput[type=text] {\r\n  padding: 10px;\r\n  width: 90%;\r\n  font-weight: 900;\r\n}\r\n\r\n@media screen and (max-width: 767px) {\r\n  form,\r\n  .list,\r\n  .list-item {\r\n    width: 100%;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -273,6 +278,44 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -666,6 +709,16 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/assets/alien.webp":
+/*!*******************************!*\
+  !*** ./src/assets/alien.webp ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "alien.webp";
+
 /***/ })
 
 /******/ 	});
@@ -694,6 +747,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -719,6 +775,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -733,6 +801,52 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"bundle": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -786,4 +900,4 @@ refreshButton.addEventListener('click', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlef3d4127d1af3bda4eead.js.map
+//# sourceMappingURL=bundle9fc3b336b0b77e65d2d8.js.map
