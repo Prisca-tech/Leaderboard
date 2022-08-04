@@ -10,19 +10,11 @@
 
 <body>
   <main>
+    <div class="heading">
+      <h1>LeaderBoard</h1>
+    </div>
     <section class="container">
-      <p class="notification hide">Form submitted</p>
-
-      <form>
-        <h1>Enter your Score</h1>
-        <input type="text" placeholder="Enter your name" class='nameInput' required>
-        <input type="text" placeholder="Enter your score" class='scoreInput' required>
-        <button class='submitButton' type="button">submit</button>
-      </form>
       <div class="list" id="list">
-        <div class="heading">
-          <h1>LeaderBoard</h1>
-        </div>
         <table class="table">
           <tbody>
             <tr>
@@ -33,6 +25,13 @@
         </table>
       </div>
       <button class='refreshButton' type="submit">refresh</button>
+      <p class="notification hide">Form submitted</p>
+      <form>
+        <h1>Enter your Score</h1>
+        <input type="text" placeholder="Enter your name" class='nameInput' required>
+        <input type="number" placeholder="Enter your score" class='scoreInput' required>
+        <button class='submitButton' type="button">submit</button>
+      </form>
     </section>
   </main>
 </body>

@@ -62,7 +62,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: 30px;
 }
 
@@ -79,6 +79,12 @@ h1 {
 }
 
 input[type=text] {
+  padding: 10px;
+  width: 90%;
+  font-weight: 900;
+}
+
+input[type=number] {
   padding: 10px;
   width: 90%;
   font-weight: 900;
